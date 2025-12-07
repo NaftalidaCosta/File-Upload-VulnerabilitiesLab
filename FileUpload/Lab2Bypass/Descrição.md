@@ -8,14 +8,15 @@ Você pode fazer login na sua própria conta usando as seguintes credenciais: `w
 
 A nossa missão é capturar uma flag que está no arquivo `/home/carlos/secret`.
 
-<img width="1366" height="768" alt="4" src="https://github.com/user-attachments/assets/f2857f86-40c6-45ba-98eb-85d6c4f6f9f6" />
+<img width="1366" height="768" alt="4" src="https://github.com/user-attachments/assets/ffdc5a0b-ec1c-4857-91d0-aa487f83ec35" />
+
 
 
 ## Intercepção das requests and responses 
 
 - Realizei o upload de um arquivo com a extensão `.php` e interceptei a requisição do tipo `POST`
 
-<img width="1366" height="768" alt="5" src="https://github.com/user-attachments/assets/a409453b-7687-4587-b7e5-f66c6c50eec5" />
+<img width="1366" height="768" alt="5" src="https://github.com/user-attachments/assets/4f749fd7-df7a-455f-9fa3-231c807bd21d" />
 
 ## Erro da aplicação
 
@@ -23,7 +24,7 @@ A nossa missão é capturar uma flag que está no arquivo `/home/carlos/secret`.
 - Esse erro, pode nos levar a uma técnica de bypass - (Manipulação do header Content-Type).
 - Aguarde...
 
-<img width="1366" height="768" alt="6" src="https://github.com/user-attachments/assets/35dd4412-5136-426f-a584-809ae447f5cf" />
+<img width="1366" height="768" alt="6" src="https://github.com/user-attachments/assets/540d42e2-fa3c-47e8-8eb5-4d17f5750499" />
 
 ## Caido - Replay 
 
@@ -32,19 +33,18 @@ A nossa missão é capturar uma flag que está no arquivo `/home/carlos/secret`.
 -  Utilizei esse recurso para analisar, o comportamento da aplicação quando determinados campos são modificados.
 
   
-<img width="1366" height="768" alt="7" src="https://github.com/user-attachments/assets/f4110f00-7783-4d91-aaef-8e2378a3bcd1" />
+<img width="1366" height="768" alt="7" src="https://github.com/user-attachments/assets/4632b6cd-fd35-4796-b783-e9db857b8b5c" />
 
 
 ## Manipulando - Caido - Replay
 
 - Parte de cima da requisição
-<img width="1366" height="768" alt="8" src="https://github.com/user-attachments/assets/1adb2696-7d82-4b2b-9f2a-a882046c2445" />
+<img width="1366" height="768" alt="8" src="https://github.com/user-attachments/assets/92e17cec-ca92-492e-8fc5-934969296225" />
 
 
 - Parte de baixo da requisição.
 
-<img width="1366" height="768" alt="9" src="https://github.com/user-attachments/assets/a42db7ab-fdc8-4796-b3d7-744103113db4" />
-
+<img width="1366" height="768" alt="9" src="https://github.com/user-attachments/assets/11cfd56a-4859-477d-969b-7e7ae893d459" />
 Requisição original  - Imagem 7 e 8 
 - Eu  modifiquei os campos `Host` e `User-Agent` para não deixar publico informações relacionado ao meu `Traffic Network`
 - O restante dos campos permanece inalterado.
@@ -144,26 +144,25 @@ iHFy3uVSDLCl7E6R0OMED9IFQNMgBJq9
 
 ## A selecionar requisição.
 - PASSO 1
-  
-<img width="1366" height="768" alt="10" src="https://github.com/user-attachments/assets/e912a5a7-6200-4e9b-93e3-9caa175f1ac4" />
+  <img width="1366" height="768" alt="10" src="https://github.com/user-attachments/assets/9fcb3d5e-ca6b-479e-a384-9623864875fd" />
 
 - PASSO 2
 
-<img width="1366" height="768" alt="11" src="https://github.com/user-attachments/assets/f94c89b6-15df-42d7-a4de-014304073d9f" />
+<img width="1366" height="768" alt="11" src="https://github.com/user-attachments/assets/407bd619-2871-442e-8eb8-c4eba0b89856" />
 
 ## Sending Request 
 - Envei uma solicitação com o metodo `GET` para que o servidor executar o conteúdo do arquivo para capturar a flag e retornar na resposta.
 
-<img width="1366" height="768" alt="12" src="https://github.com/user-attachments/assets/11f10e8e-5bf4-4829-85d0-513fcf861efe" />
+<img width="1366" height="768" alt="12" src="https://github.com/user-attachments/assets/e63464f2-4e3c-4172-952f-3fed6b056e3e" />
 
 ## Submeti a flag & Final 
 
-- <img width="1366" height="768" alt="13" src="https://github.com/user-attachments/assets/edcf93b1-d6d7-497c-87ae-b8f947e79884" />
+- <img width="1366" height="768" alt="13" src="https://github.com/user-attachments/assets/c1a90777-62ab-490e-a189-e2a2fad8c546" />
 
 >
 >
 
--  <img width="1366" height="768" alt="14" src="https://github.com/user-attachments/assets/26c8a813-4b9f-4624-9b90-dc1b371dac74" />
+-  <img width="1366" height="768" alt="14" src="https://github.com/user-attachments/assets/5fc755d7-2435-4de6-adca-8bf91ed3a668" />
 
 ## Aprendizado:
 
@@ -171,5 +170,6 @@ Uma técnica comum utilizada por sites para validar uploads consiste em analisar
 
 Créditos:
 `https://portswigger.net/web-security/learning-paths/`
+
 
 
