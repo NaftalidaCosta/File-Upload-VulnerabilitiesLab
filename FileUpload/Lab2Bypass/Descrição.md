@@ -166,10 +166,53 @@ iHFy3uVSDLCl7E6R0OMED9IFQNMgBJq9
 
 ## Aprendizado:
 
+
 Uma técnica comum utilizada por sites para validar uploads consiste em analisar o cabeçalho Content-Type enviado na requisição e verificar se ele corresponde ao tipo MIME esperado. Em plataformas que aceitam apenas imagens, por exemplo, costuma-se restringir o envio a tipos como image/jpeg ou image/png. Contudo, essa abordagem se torna frágil quando o servidor confia cegamente nesse cabeçalho. Sem uma verificação adicional para confirmar se o conteúdo do arquivo realmente corresponde ao tipo MIME declarado, essa proteção pode ser facilmente burlada com ferramentas como o Caido Replay.
 
-Créditos:
-`https://portswigger.net/web-security/learning-paths/`
+# Principais vetores que levam a RCE em File Uploads
+
+  1. Upload de Arquivos Executáveis
+  2. Falha na Validação da Extensão - 
+     Mesmo que a aplicação limite extensões, vetores como:
+     renomear para shell.php.jpg
+     alterar MIME type
+     upload com nomes duplos: shell.php%00.jpg
+     extensões poliglotas
+     podem permitir o upload de código executável.
+  3. Falha na Validação do Content-Type.
+  4. Diretórios Públicos com Execução Ativada
+     Mesmo que o upload seja aceito, só vira RCE se:
+     o arquivo cair em um diretório acessível via HTTP. 
+5. Configurações Inseguras do Servidor -
+Alguns servidores executam arquivos baseados em:
+extensão
+MIME type
+assinatura do arquivo
+Se houver falhas nisso, até arquivos “não .php” podem ser interpretados como código.
+o servidor permitir execução de scripts nesse diretório (ex: Apache com PHP habilitado)
+
+
+# Medidas de Mitigação Contra RCE via File Uploads
+ 1  - Desativar execução de scripts na pasta `FileUpload`
+ 2  - Renomear o arquivo automaticamente para evitar 
+ 3  - Verificar MIME type do servidor (não o do usuário)
+ 4  -  Auditar, registrar e monitorar uploads - 
+Registrar sempre:
+nome original
+IP de origem
+tipo de arquivo detectado
+hash do arquivo
+Isso permite detectar comportamento anômalo e responder rapidamente caso um payload malicioso seja enviado.
+
+
+## Conclusão
+
+Ao entender as vulnerabilidades de File Upload que podem levar a RCE, percebi que a mitigação eficaz depende de defesa em profundidade. Não existe uma única solução; a segurança surge da combinação de múltiplos controles, tanto no código da aplicação quanto na configuração do servidor.
+
+## Créditos:
+- `https://portswigger.net/web-security/learning-paths/`
+- Cisco Networking Academy 
+
 
 
 
