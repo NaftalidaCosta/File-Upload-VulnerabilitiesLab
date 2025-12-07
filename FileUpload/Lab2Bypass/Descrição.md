@@ -197,7 +197,7 @@ o servidor permitir execução de scripts nesse diretório (ex: Apache com PHP h
 
 # Medidas de Mitigação Contra RCE via File Uploads
  1  - Desativar execução de scripts na pasta `FileUpload`
- 2  - Renomear o arquivo automaticamente para evitar 
+ 2  - Renomear o arquivo automaticamente para evitar execução de scripts malicosos.
  3  - Verificar MIME type do servidor (não o do usuário)
  4  -  Auditar, registrar e monitorar uploads - 
 Registrar sempre:
@@ -215,6 +215,7 @@ Ao entender as vulnerabilidades de File Upload que podem levar a RCE, percebi qu
 ## Créditos:
 - `https://portswigger.net/web-security/learning-paths/`
 - Cisco Networking Academy 
+
 
 
 
