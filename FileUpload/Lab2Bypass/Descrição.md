@@ -150,7 +150,7 @@ iHFy3uVSDLCl7E6R0OMED9IFQNMgBJq9
 
 <img width="1366" height="768" alt="11" src="https://github.com/user-attachments/assets/407bd619-2871-442e-8eb8-c4eba0b89856" />
 
-## Sending Request 
+## A Enviar solicitação.
 - Envei uma solicitação com o metodo `GET` para que o servidor executar o conteúdo do arquivo para capturar a flag e retornar na resposta.
 
 <img width="1366" height="768" alt="12" src="https://github.com/user-attachments/assets/e63464f2-4e3c-4172-952f-3fed6b056e3e" />
@@ -212,6 +212,7 @@ Ao entender as vulnerabilidades de File Upload que podem levar a RCE, percebi qu
 ## Créditos:
 - `https://portswigger.net/web-security/learning-paths/`
 - Cisco Networking Academy 
+
 
 
 
