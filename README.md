@@ -53,7 +53,7 @@ Este exercício demonstrou que validações baseadas exclusivamente em headers s
 ---
 
 ## 📸 Evidências (18 Imagens)
-No diretório `/evidencias`, incluí:
+No diretório `/FileUpload`, incluí:
 
 - Descrição completa dos labs  
 - Passo a passo de cada exploração  
