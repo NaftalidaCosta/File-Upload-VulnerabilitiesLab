@@ -23,7 +23,6 @@ Neste laboratório explorei uma falha clássica de upload inseguro.
 Realizei:
 - Upload de um payload PHP (`.php`) contendo código simples para execução remota.  
 - Manipulação do tipo MIME e da lógica de validação.  
-- Descoberta do diretório onde os arquivos eram armazenados.  
 - Execução da payload no servidor, confirmando o RCE.
 
 O foco foi compreender como a aplicação validava a extensão e como era possível contornar essas proteções com um arquivo aparentemente inofensivo, mas funcional para execução.
