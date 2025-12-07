@@ -11,14 +11,13 @@ A nossa missão é capturar uma flag que está no arquivo `/home/carlos/secret`.
 <img width="1366" height="768" alt="4" src="https://github.com/user-attachments/assets/ffdc5a0b-ec1c-4857-91d0-aa487f83ec35" />
 
 
-
-## Intercepção das requests and responses 
+## Intercepção Das Requests And Responses 
 
 - Realizei o upload de um arquivo com a extensão `.php` e interceptei a requisição do tipo `POST`
 
 <img width="1366" height="768" alt="5" src="https://github.com/user-attachments/assets/4f749fd7-df7a-455f-9fa3-231c807bd21d" />
 
-## Erro da aplicação
+## Erro Da Aplicação
 
 - Aplicação apresentou um erro, pois a extensão do arquivo transferido não é aceito pela aplicação.
 - Esse erro, pode nos levar a uma técnica de bypass - (Manipulação do header Content-Type).
@@ -42,10 +41,10 @@ A nossa missão é capturar uma flag que está no arquivo `/home/carlos/secret`.
 <img width="1366" height="768" alt="8" src="https://github.com/user-attachments/assets/92e17cec-ca92-492e-8fc5-934969296225" />
 
 
-- Parte de baixo da requisição.
+- Parte De Baixo Da Requisição.
 
 <img width="1366" height="768" alt="9" src="https://github.com/user-attachments/assets/11cfd56a-4859-477d-969b-7e7ae893d459" />
-Requisição original  - Imagem 7 e 8 
+Requisição Original  - Imagem 7 e 8 
 - Eu  modifiquei os campos `Host` e `User-Agent` para não deixar publico informações relacionado ao meu `Traffic Network`
 - O restante dos campos permanece inalterado.
 
@@ -92,7 +91,7 @@ iHFy3uVSDLCl7E6R0OMED9IFQNMgBJq9
 
 
 
-Para isso usando o replay - Imagem 9:
+Para Isso Usando O Replay - Imagem 9:
 
 - Observe o campo `Content-Type:` das duas solicitações e compare a resposta da primeira solicitação com a resposta da última solicitação.
 - Eu  modifiquei os campos `Host` e `User-Agent` para não deixar publico informações relacionado ao meu `Traffic Network`.
@@ -142,7 +141,7 @@ iHFy3uVSDLCl7E6R0OMED9IFQNMgBJq9
 - Como o arquivo já foi uploaded, precisei executar o arquivo malicioso para extrair a flag.
 - Voltei no histórico de http para selecionar uma requisição do tipo `GET` para enviar ao replay.
 
-## A selecionar requisição.
+## A Selecionar Requisição.
 - PASSO 1
   <img width="1366" height="768" alt="10" src="https://github.com/user-attachments/assets/9fcb3d5e-ca6b-479e-a384-9623864875fd" />
 
@@ -155,7 +154,7 @@ iHFy3uVSDLCl7E6R0OMED9IFQNMgBJq9
 
 <img width="1366" height="768" alt="12" src="https://github.com/user-attachments/assets/e63464f2-4e3c-4172-952f-3fed6b056e3e" />
 
-## Submeti a flag & Final 
+## Submeti A flag & Final 
 
 - <img width="1366" height="768" alt="13" src="https://github.com/user-attachments/assets/c1a90777-62ab-490e-a189-e2a2fad8c546" />
 
@@ -212,6 +211,7 @@ Ao entender as vulnerabilidades de File Upload que podem levar a RCE, percebi qu
 ## Créditos:
 - `https://portswigger.net/web-security/learning-paths/`
 - Cisco Networking Academy 
+
 
 
 
